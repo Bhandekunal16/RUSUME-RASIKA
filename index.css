@@ -1,0 +1,171 @@
+:root {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: pink;
+    background-image: url(./messy\ bun-amico.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100vw;
+    color: white;
+}
+
+.title{
+    background-color: white;
+    color: pink;
+    text-align: center;
+}
+
+
+
+button {
+    background-color: palevioletred;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    border-color: white;
+    padding: 1%;
+   border-radius: 8px;
+   margin-left: 45%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.grid{
+    width: 98%;
+    padding: 1%;
+    height: fit-content;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 45vw;
+    height: 35vh;
+    border-radius: 8px;
+    background-color: rgb(242, 226, 229);
+    overflow: auto;
+}
+
+.mini-grid {
+    width: 99%;
+    padding: 0.6%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mini-card {
+    width: 20vw;
+    height: 28vh;
+    border-radius: 8px;
+    background-color: rgb(242, 226, 229);
+}
+
+.mini-card li {
+    margin-left: 2%;
+}
+
+.mini-card:hover {
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+    transform: translate(-2px);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+    transform: translate(-2px);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.header{
+    background-color: lightcoral;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.inside{
+    color: lightcoral;
+}
+
+.inside p {
+    margin-left: 1rem;
+}
+
+.inside Address {
+    margin-left: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+ th,td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+ }
+
+ th {
+    background-color: #f2f2f2;
+ }
+
+@media  (max-width:1100px) {
+    .container{
+        background-color: pink;
+        height: fit-content;
+        width: 100vw;
+        color: white;
+    }
+
+    
+    .grid{
+        width: 98%;
+        padding: 1%;
+        height: fit-content;
+        background-color: transparent;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card {
+        margin-top: 1%;
+        width: 95vw;
+        height: 45vh;
+        border-radius: 8px;
+        background-color: rgb(242, 226, 229);
+        overflow: auto;
+    }
+
+    .mini-grid {
+        width: 100%;
+        padding: 0.6%;
+        height: auto;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .mini-card {
+        width: 40vw;
+        height: 48vh;
+        border-radius: 8px;
+        background-color: rgb(242, 226, 229);
+    }
+}
